@@ -16,8 +16,8 @@ def hello():
     name = request.args.get("name")
     hello = raw.loc[raw['Student ID'] == name]
     if not name:
-        render_template("failure.html)
+        render_template("failure.html")
     #for items in hello:
         #if name != items:
-            #render_template("failure.html)
+            #render_template("failure.html")
     return render_template("hello.html", hello = name)
